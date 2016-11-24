@@ -1,0 +1,250 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0; /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline; /* приводим все к одной базовой линии */
+    background: transparent; /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%; /* размер шрифта всем одинаковый */
+}
+
+a { /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    outline: none;
+}
+
+
+td, td img {
+    vertical-align: top; /* возвращаем привычное вертикальное выравнивание */
+}
+
+input, select, button, textarea {
+    margin: 0; /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+    font-size: 100%; /* делаем размер шрифтов везде одинаковым */
+    outline: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+    min-height: 100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+
+body {
+    color: #000000;
+    text-align: left;
+    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+    min-height: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+img {
+
+    max-width: 100%;
+}
+
+.clr {
+    clear: both;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* --------------- /базовые настройки ---------*/
+
+body {
+    color: #404040;
+    font-family: 'Open Sans', sans-serif;
+    background: #f9f9f9;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/header-bg.png);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px 90px 20px;
+}
+
+header > h1 {
+    font-size: 3.75em;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 25px;
+}
+
+header > h3 {
+    font-size: 1.125em;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+header > p {
+    font-size: 0.75em;
+}
+
+.subscribe {
+    background: rgba(0, 0, 0, 0.65);
+    display: table;
+    padding: 20px;
+    margin: 0 auto 10px auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.subscribe input {
+    float: left;
+}
+
+.subscribe input[type="text"],
+.subscribe input[type="tel"] {
+    border: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    padding: 12px 20px 13px 20px;
+    width: 320px;
+    margin-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.subscribe input[type="submit"] {
+    background-color: #22ae58;
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+article .title {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+article > p {
+    margin-bottom: 30px;
+}
+
+.imgleft {
+    float: left;
+    margin: 0 30px 20px 0;
+}
+
+.social-icon{
+    color: #ffffff;
+}
+
+.social-icon:hover{
+    color: #22ae58;
+}
+/*-------------- подключаем иконки ------------*/
+
+header .header-contact {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    list-style-image: none;
+    text-align: right;
+    padding-bottom: 90px;
+    padding-right: 40px;
+}
+
+.header-contact li {
+    display: inline-block;
+}
+
+
+.social-icon-block li {
+    padding-left: 15px;
+}
+/*-------------- /подключаем иконки ------------*/
+
+/*-------------- медиа запросы ------------*/
+
+@media only screen and (max-width: 1010px) {
+    .subscribe input[type="text"],
+    .subscribe input[type="tel"] {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .subscribe input[type="text"],
+    .subscribe input[type="tel"] {
+        width: 320px;
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 30px 20px;
+            }
+
+    header > h1 {
+        font-size: 2.75em;
+        margin-bottom: 15px;
+    }
+
+    header > h3 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .subscribe input[type="text"],
+    .subscribe input[type="tel"] {
+        width: 200px;
+    }
+
+    header > h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    article > h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+}
+
+/*-------------- /медиа запросы ------------*/
+
