@@ -166,12 +166,31 @@ article > p {
     margin: 0 30px 20px 0;
 }
 
+.imgright {
+  float: right;
+  margin: 0 0 20px 30px;
+}
+
 .social-icon{
     color: #ffffff;
 }
 
 .social-icon:hover{
     color: #22ae58;
+}
+
+footer{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/header-bg.png);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px 90px 20px;
+}
+
+footer > p{
+  font-size: 0.75em;
 }
 /*-------------- подключаем иконки ------------*/
 
@@ -247,4 +266,3 @@ header .header-contact {
 }
 
 /*-------------- /медиа запросы ------------*/
-
