@@ -1,0 +1,28 @@
+{
+  "name": "logoped_in",
+  "version": "1.0.0",
+  "description": "personal_page",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbychkar/logoped_in.git"
+  },
+  "keywords": [
+    "logoped",
+    "personal_page"
+  ],
+  "author": "DBychkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbychkar/logoped_in/issues"
+  },
+  "homepage": "https://github.com/dbychkar/logoped_in#readme",
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
